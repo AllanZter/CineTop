@@ -1,4 +1,4 @@
-const API_KEY = '782b88415f3be694e68fe7ff9224f2f4';
+
 const containerDestaque = document.getElementById('lista-filmes');
 
 // Buscar filmes populares
