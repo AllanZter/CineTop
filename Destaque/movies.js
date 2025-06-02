@@ -45,8 +45,7 @@ const filmes = [
     card.innerHTML = `
       <img src="${filme.imagem}" alt="${filme.titulo}" />
       <div class="movie-info">
-        <h3>${filme.titulo}</h3>
-        <p>${filme.descricao}</p>
+        
         <a href="${filme.link}" class="watch-btn" target="_blank">🎬 Assistir Online</a>
       </div>
     `;

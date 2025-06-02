@@ -2,38 +2,38 @@ const filmesDrama = [
     {
       titulo: "Matrix",
       descricao: "Um hacker descobre a verdade sobre a realidade.",
-      imagem: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-      link: "https://exemplo.com/assistir/matrix"
+      imagem: "https://images-01.ottvs.com.br/0452226/0452226_200.jpg?1178165930",
+      link: ""
     },
     {
       titulo: "Vingadores: Ultimato",
       descricao: "Os heróis se reúnem para derrotar Thanos.",
-      imagem: "https://image.tmdb.org/t/p/w500/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg"
+      imagem: "https://images-01.ottvs.com.br/0452230/0452230_200.jpg?1004727515"
     },
     {
       titulo: "Homem-Aranha: Sem Volta Para Casa",
       descricao: "Peter Parker enfrenta múltiplos vilões.",
-      imagem: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+      imagem: "https://images-01.ottvs.com.br/0280432/0280432_200.jpg?1562352997"
     },
     {
       titulo: "Pecadores",
       descricao: "Dispostos a deixar suas vidas conturbadas para trás...",
-      imagem: "https://media.themoviedb.org/t/p/w220_and_h330_face/a9kYEboW1TQaeilGYUAx1MO0DUp.jpg"
+      imagem: "https://images-01.ottvs.com.br/0457438/0457438_200.jpg?183370119"
     },
     {
       titulo: "Doctor Who (2024)",
       descricao: "O Doutor e sua companheira Ruby Sunday viajam através do espaço.....",
-      imagem: "https://media.themoviedb.org/t/p/w220_and_h330_face/2hYT8Sg85f1adGhVhBjT7724lz0.jpg"
+      imagem: "https://images-01.ottvs.com.br/0174373/0174373_200.jpg?1260674422"
     },
     {
         titulo: "Doctor Who (2024)",
         descricao: "O Doutor e sua companheira Ruby Sunday viajam através do espaço.....",
-        imagem: "https://media.themoviedb.org/t/p/w220_and_h330_face/2hYT8Sg85f1adGhVhBjT7724lz0.jpg"
+        imagem: "https://images-01.ottvs.com.br/0456756/0456756_127.jpg?1028219294"
     },
     {
         titulo: "Doctor Who (2024)",
         descricao: "O Doutor e sua companheira Ruby Sunday viajam através do espaço.....",
-        imagem: "https://media.themoviedb.org/t/p/w220_and_h330_face/2hYT8Sg85f1adGhVhBjT7724lz0.jpg"
+        imagem: "https://images-01.ottvs.com.br/0180256/0180256_127.jpg?161442201"
     }
   ];
   
