@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CineTop - Filmes Online</title>
+  <link rel="stylesheet" href="styled.css" />
+  <link rel="stylesheet" href="./Destaque/movies.css" />
+  
+
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+        <a href="#" class="logo">CineTop</a>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Filmes</a>
+            <a href="#">Lançamentos</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="search-bar">
+        <input type="text" placeholder="Buscar filme..." />
+        <button>Buscar</button>
+      </div>
+    </div>
+    
+    <div class="header-right">
+      
+      <button class="subscribe-btn">Inscreva-se</button>
+    </div>
+  </header>
+
+    <!-- Filmes -->         
+    <section class="filmes">
+        <h2>Filmes em Destaque</h2>
+        <div class="carrossel-wrapper">
+          <button class="btn-nav left" id="btn-esquerda-destaque">&#10094;</button>
+      
+          <div class="carrossel" id="lista-filmes">
+            <!-- Os filmes virão via JavaScript -->
+          </div>
+      
+          <button class="btn-nav right" id="btn-direita-destaque">&#10095;</button>
+        </div>
+      </section>
+
+      <section class="filmes">
+        <h2>Drama</h2>
+        <div class="carrossel-wrapper">
+          <button class="btn-nav left" id="btn-esquerda-drama">&#10094;</button>
+      
+          <div class="carrossel" id="drama">
+            <!-- Os filmes virão via JavaScript -->
+          </div>
+      
+          <button class="btn-nav right" id="btn-direita-drama">&#10095;</button>
+        </div>
+      </section>
+      
+      
+  
+
+  <footer>
+    © 2025 CineTop - Todos os direitos reservados
+  </footer>
+
+</body>
+<script src="./Drama/movies.js"></script>
+<script src="./Destaque/movies.js"></script>
+
+</html>

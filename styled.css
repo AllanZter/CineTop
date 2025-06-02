@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+  }
+
+  header {
+    background-color: #1f1f1f;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 1.8rem;
+    color: #00e676;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+
+  nav a:hover {
+    color: #00e676;
+  }
+
+  .subscribe-btn {
+    padding: 8px 16px;
+    background-color: #00e676;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .subscribe-btn:hover {
+    background-color: #00c45a;
+  }
+
+  .search-bar {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .search-bar input {
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    flex: 1;
+    min-width: 120px;
+    color: #000;
+  }
+
+  .search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #00e676;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  
+
+
+
+  footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px;
+    color: #777;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .header-left,
+    .header-right {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .search-bar {
+      width: 100%;
+      max-width: 400px;
+    }
+
+    nav {
+      justify-content: center;
+    }
+
+    .logo {
+      text-align: center;
+      width: 100%;
+    }
+  }
