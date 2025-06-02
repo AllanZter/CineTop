@@ -1,6 +1,6 @@
 const container = document.getElementById('drama');
 
-fetch("https://api.themoviedb.org/3/discover/movie?api_key=782b88415f3be694e68fe7ff9224f2f4&language=pt-BR&with_genres=18&page=2")
+fetch("https://api.themoviedb.org/3/discover/movie?api_key=&language=pt-BR&with_genres=18&page=2")
   .then(response => response.json())
   .then(data => {
     const filmesDrama = data.results;
