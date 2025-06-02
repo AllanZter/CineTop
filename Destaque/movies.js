@@ -57,10 +57,10 @@ const filmes = [
   const btnDireitaDestaque = document.getElementById('btn-direita-destaque');
   
   btnEsquerdaDestaque.addEventListener('click', () => {
-    container.scrollBy({ left: -300, behavior: 'smooth' });
+    containerDestaque.scrollBy({ left: -300, behavior: 'smooth' });
   });
   
   btnDireitaDestaque.addEventListener('click', () => {
-    container.scrollBy({ left: 300, behavior: 'smooth' });
+    containerDestaque.scrollBy({ left: 300, behavior: 'smooth' });
   });
   

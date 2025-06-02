@@ -53,14 +53,14 @@ const filmesDrama = [
   });
   
   // Navegação lateral
-  const btnEsquerda = document.getElementById('btn-esquerda-drama');
-  const btnDireita = document.getElementById('btn-direita-drama');
+  const btnEsquerdaDrama = document.getElementById('btn-esquerda-drama');
+  const btnDireitaDrama = document.getElementById('btn-direita-drama');
   
-  btnEsquerda.addEventListener('click', () => {
+  btnEsquerdaDrama.addEventListener('click', () => {
     container.scrollBy({ left: -300, behavior: 'smooth' });
   });
   
-  btnDireita.addEventListener('click', () => {
+  btnDireitaDrama.addEventListener('click', () => {
     container.scrollBy({ left: 300, behavior: 'smooth' });
   });
   
