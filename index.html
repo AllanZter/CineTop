@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CineTop - Filmes Online</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+</head>
+
+<body class="bg-gray-950 text-white">
+
+
+  <header class="bg-gray-900 shadow-lg px-8 py-4 flex items-center justify-between">
+
+    <div class="flex items-center gap-8">
+      <a href="#" class="text-2xl font-bold text-red-500 tracking-wide">
+        CineTop
+      </a>
+
+      <nav class="hidden md:flex gap-6 text-gray-300">
+        <a href="#" class="hover:text-white transition">Início</a>
+        <a href="#" class="hover:text-white transition">Filmes</a>
+        <a href="#" class="hover:text-white transition">Lançamentos</a>
+        <a href="#" class="hover:text-white transition">Contato</a>
+      </nav>
+
+      <!-- Busca -->
+      <div class="flex bg-gray-800 rounded-lg overflow-hidden">
+        <input 
+          type="text" 
+          placeholder="Buscar filme..."
+          class="bg-transparent px-4 py-2 text-sm focus:outline-none"
+        />
+        <button class="bg-red-500 hover:bg-red-600 px-4 transition">
+          Buscar
+        </button>
+      </div>
+    </div>
+
+    <button class="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-lg font-medium transition shadow-md">
+      Inscreva-se
+    </button>
+
+  </header>
+
+  
+  <main class="px-8 py-10 space-y-14">
+
+    <!-- Seção Filmes -->
+    <section class="space-y-16">
+
+  <!-- Drama -->
+  <div>
+    <h2 class="mb-5 text-xl font-semibold">Drama</h2>
+    <div class="relative">
+      <button id="btn-esquerda-drama"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+
+      <div id="drama"
+        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+
+      <button id="btn-direita-drama"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
+    </div>
+  </div>
+
+  <!-- Ação -->
+  <div>
+    <h2 class="mb-5 text-xl font-semibold">Ação</h2>
+    <div class="relative">
+      <button id="btn-esquerda-acao"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+
+      <div id="acao"
+        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+
+      <button id="btn-direita-acao"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
+    </div>
+  </div>
+
+  <!-- Comédia -->
+  <div>
+    <h2 class="mb-5 text-xl font-semibold">Comédia</h2>
+    <div class="relative">
+      <button id="btn-esquerda-comedia"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+
+      <div id="comedia"
+        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+
+      <button id="btn-direita-comedia"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
+    </div>
+  </div>
+
+  <!--Terror-->
+  <div>
+    <h2 class="mb-5 text-xl font-semibold">Terror</h2>
+    <div class="relative">
+      <button id="btn-esquerda-terror"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+
+      <div id="terror"
+        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+
+      <button id="btn-direita-terror"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
+    </div>
+  </div>
+
+  <!--Animação-->
+  <div>
+    <h2 class="mb-5 text-xl font-semibold">Animação</h2>
+    <div class="relative">
+      <button id="btn-esquerda-animacao"
+        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+
+      <div id="animacao"
+        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+
+      <button id="btn-direita-animacao"
+        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
+    </div>
+  </div>
+
+</section>
+
+  </main>
+
+  
+  <footer class="bg-gray-900 text-center text-gray-400 py-6 mt-10">
+    © 2025 CineTop - Todos os direitos reservados
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
