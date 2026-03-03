@@ -19,40 +19,80 @@
 <body class="bg-gray-950 text-white">
 
 
-  <header class="bg-gray-900 shadow-lg px-8 py-4 flex items-center justify-between">
+<header class="bg-gray-900 shadow-lg px-6 py-4">
 
-    <div class="flex items-center gap-8">
-      <a href="#" class="text-2xl font-bold text-red-500 tracking-wide">
-        CineTop
-      </a>
+  <div class="flex items-center justify-between">
 
-      <nav class="hidden md:flex gap-6 text-gray-300">
-        <a href="#" class="hover:text-white transition">Início</a>
-        <a href="#" class="hover:text-white transition">Filmes</a>
-        <a href="#" class="hover:text-white transition">Lançamentos</a>
-        <a href="#" class="hover:text-white transition">Contato</a>
-      </nav>
+    <!-- Logo -->
+    <a href="#" class="text-2xl font-bold text-red-500 tracking-wide">
+      CineTop
+    </a>
 
-      <!-- Busca -->
-      <div class="flex bg-gray-800 rounded-lg overflow-hidden">
-        <input 
-          type="text" 
-          placeholder="Buscar filme..."
-          class="bg-transparent px-4 py-2 text-sm focus:outline-none"
-        />
-        <button class="bg-red-500 hover:bg-red-600 px-4 transition">
-          Buscar
-        </button>
-      </div>
+    <!-- Menu Desktop -->
+    <nav class="hidden md:flex gap-6 text-gray-300">
+      <a href="#" class="hover:text-white transition">Início</a>
+      <a href="#" class="hover:text-white transition">Filmes</a>
+      <a href="#" class="hover:text-white transition">Series</a>
+      <a href="#" class="hover:text-white transition">Infantil</a>
+      <a href="#" class="hover:text-white transition">Lançamentos</a>
+      <a href="#" class="hover:text-white transition">Categorias</a>
+      <a href="#" class="hover:text-white transition">Contato</a>
+    </nav>
+
+    <!-- Busca Desktop -->
+    <div class="hidden md:flex bg-gray-800 rounded-lg overflow-hidden">
+      <input 
+        type="text" 
+        placeholder="Buscar filme..."
+        class="bg-transparent px-4 py-2 text-sm focus:outline-none"
+      />
+      <button class="bg-red-500 hover:bg-red-600 px-4 transition">
+        Buscar
+      </button>    
+    
     </div>
+    
 
-    <button class="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-lg font-medium transition shadow-md">
+     <button class="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-lg font-medium transition shadow-md">
       Inscreva-se
     </button>
 
-  </header>
+    <!-- Botão Mobile -->
+    <button id="menuBtn" class="md:hidden text-white text-2xl">
+      ☰
+    </button>
 
-  
+
+  </div>
+
+  <!-- Menu Mobile -->
+  <div id="mobileMenu" class="hidden mt-4 flex flex-col gap-4 text-gray-300 md:hidden">
+
+    <a href="#" class="hover:text-white">Início</a>
+    <a href="#" class="hover:text-white">Filmes</a>
+    <a href="#" class="hover:text-white">Lançamentos</a>
+    <a href="#" class="hover:text-white">Contato</a>
+
+    <div class="flex bg-gray-800 rounded-lg overflow-hidden">
+      <input 
+        type="text" 
+        placeholder="Buscar filme..."
+        class="bg-transparent px-4 py-2 text-sm focus:outline-none w-full"
+      />
+      <button class="bg-red-500 px-4">
+        Buscar
+      </button>
+    </div>
+
+    <button class="bg-red-500 hover:bg-red-600 px-5 py-2 rounded-lg font-medium">
+      Inscreva-se
+    </button>
+
+  </div>
+
+</header>
+
+
   <main class="px-8 py-10 space-y-14">
 
     <!-- Seção Filmes -->
@@ -143,5 +183,13 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
 </body>
 </html>
