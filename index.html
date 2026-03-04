@@ -17,16 +17,14 @@
 </head>
 
 <body class="bg-gray-950 text-white">
-
-
 <header class="bg-gray-900 shadow-lg px-6 py-4">
 
   <div class="flex items-center justify-between">
 
-    <!-- Logo -->
-    <a href="#" class="text-2xl font-bold text-red-500 tracking-wide">
-      CineTop
-    </a>
+    <!--Logo-->
+  <a href="#" class="text-3xl font-extrabold tracking-wider bg-gradient-to-r from-red-500 to-yellow-400 bg-clip-text text-transparent">
+  Cine<span class="text-white">Top</span>
+</a>
 
     <!-- Menu Desktop -->
     <nav class="hidden md:flex gap-6 text-gray-300">
@@ -93,105 +91,101 @@
   </div>
 
 </header>
+<main class="px-8 py-10 space-y-14">
 
+  <!-- Seção Filmes -->
+  <section class="space-y-16">
 
-  <main class="px-8 py-10 space-y-14">
+<!-- Drama -->
+<div>
+  <h2 class="mb-5 text-xl font-semibold">Drama</h2>
+  <div class="relative">
+    <button id="btn-esquerda-drama"
+      class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
 
-    <!-- Seção Filmes -->
-    <section class="space-y-16">
+    <div id="drama"
+      class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
 
-  <!-- Drama -->
-  <div>
-    <h2 class="mb-5 text-xl font-semibold">Drama</h2>
-    <div class="relative">
-      <button id="btn-esquerda-drama"
-        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
-
-      <div id="drama"
-        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
-
-      <button id="btn-direita-drama"
-        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
-    </div>
+    <button id="btn-direita-drama"
+      class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
   </div>
+</div>
 
-  <!-- Ação -->
-  <div>
-    <h2 class="mb-5 text-xl font-semibold">Ação</h2>
-    <div class="relative">
-      <button id="btn-esquerda-acao"
-        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+<!-- Ação -->
+<div>
+  <h2 class="mb-5 text-xl font-semibold">Ação</h2>
+  <div class="relative">
+    <button id="btn-esquerda-acao"
+      class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
 
-      <div id="acao"
-        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+    <div id="acao"
+      class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
 
-      <button id="btn-direita-acao"
-        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
-    </div>
+    <button id="btn-direita-acao"
+      class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
   </div>
+</div>
 
-  <!-- Comédia -->
-  <div>
-    <h2 class="mb-5 text-xl font-semibold">Comédia</h2>
-    <div class="relative">
-      <button id="btn-esquerda-comedia"
-        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+<!-- Comédia -->
+<div>
+  <h2 class="mb-5 text-xl font-semibold">Comédia</h2>
+  <div class="relative">
+    <button id="btn-esquerda-comedia"
+      class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
 
-      <div id="comedia"
-        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+    <div id="comedia"
+      class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
 
-      <button id="btn-direita-comedia"
-        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
-    </div>
+    <button id="btn-direita-comedia"
+      class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
   </div>
+</div>
 
-  <!--Terror-->
-  <div>
-    <h2 class="mb-5 text-xl font-semibold">Terror</h2>
-    <div class="relative">
-      <button id="btn-esquerda-terror"
-        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+<!--Terror-->
+<div>
+  <h2 class="mb-5 text-xl font-semibold">Terror</h2>
+  <div class="relative">
+    <button id="btn-esquerda-terror"
+      class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
 
-      <div id="terror"
-        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+    <div id="terror"
+      class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
 
-      <button id="btn-direita-terror"
-        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
-    </div>
+    <button id="btn-direita-terror"
+      class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
   </div>
+</div>
 
-  <!--Animação-->
-  <div>
-    <h2 class="mb-5 text-xl font-semibold">Animação</h2>
-    <div class="relative">
-      <button id="btn-esquerda-animacao"
-        class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
+<!--Animação-->
+<div>
+  <h2 class="mb-5 text-xl font-semibold">Animação</h2>
+  <div class="relative">
+    <button id="btn-esquerda-animacao"
+      class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">‹</button>
 
-      <div id="animacao"
-        class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
+    <div id="animacao"
+      class="flex gap-6 overflow-x-auto scroll-smooth px-12 pb-4 no-scrollbar"></div>
 
-      <button id="btn-direita-animacao"
-        class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
-    </div>
+    <button id="btn-direita-animacao"
+      class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black px-4 py-2 rounded-full z-10">›</button>
   </div>
+</div>
 
 </section>
 
-  </main>
+</main>  
+<footer class="bg-gray-900 text-center text-gray-400 py-6 mt-10">
+  © 2025 CineTop - Desenvolvido por Allan Carvalho Souza
+</footer>
 
-  
-  <footer class="bg-gray-900 text-center text-gray-400 py-6 mt-10">
-    © 2025 CineTop - Desenvolvido por Allan Carvalho Souza
-  </footer>
+<script src="script.js"></script>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-  <script src="script.js"></script>
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
-
-    menuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
 </body>
 </html>
