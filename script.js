@@ -11,30 +11,46 @@ function carregarFilmes(containerId, generoId, btnEsqId, btnDirId) {
       data.results.forEach(filme => {
 
         const card = document.createElement('div');
-        card.className = `
-          min-w-[180px] 
-          bg-gray-800 
-          rounded-xl 
-          overflow-hidden 
-          shadow-lg 
-          hover:scale-105 
-          transition 
-          duration-300 
-          cursor-pointer
-        `;
 
-        card.innerHTML = `
-          <img 
-            src="https://image.tmdb.org/t/p/w500${filme.poster_path}" 
-            alt="${filme.title}" 
-            class="w-full h-64 object-cover"
-          />
-          <div class="p-3">
-            <h3 class="text-sm font-semibold truncate">${filme.title}</h3>
-          </div>
-        `;
+card.className = `
+  min-w-[180px]
+  bg-gray-800
+  rounded-2xl
+  overflow-hidden
+  shadow-lg
+  hover:shadow-2xl
+  hover:scale-105
+  transition
+  duration-300
+  cursor-pointer
+`;
 
-        container.appendChild(card);
+card.innerHTML = `
+  <div class="relative">
+    <img 
+      src="https://image.tmdb.org/t/p/w500${filme.poster_path}" 
+      alt="${filme.title}" 
+      class="w-full h-64 object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+  </div>
+
+  <div class="p-4">
+    <h3 class="text-white text-sm font-semibold truncate mb-3">
+      ${filme.title}
+    </h3>
+
+    <button 
+      class="w-full bg-red-600 hover:bg-red-700 text-white 
+      text-sm font-semibold py-2 rounded-lg 
+      transition duration-300 
+      hover:shadow-red-500/40 hover:shadow-md">
+       Assistir
+    </button>
+  </div>
+`;
+
+container.appendChild(card);
       });
 
     });
